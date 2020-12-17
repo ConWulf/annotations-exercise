@@ -3,7 +3,7 @@
  */
 import java.util.ArrayList;
 import java.util.List;
-
+@SuppressWarnings("all")
 public class Author extends Person {
     private List books;
 
@@ -29,7 +29,7 @@ public class Author extends Person {
     }
 
     @Override
-    public String sortName() {
-        return String.format("%s, %s", lastName, firstName);
+    public String fullName() {
+        return String.format("%s, %s", firstName, lastName);
     }
 }
